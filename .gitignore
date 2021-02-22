@@ -13,7 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
-/Debug
+
 .vs/
 *.obj
 *.tlog
