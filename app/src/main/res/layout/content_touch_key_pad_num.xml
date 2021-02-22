@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_keyboard_num"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:columnCount="7">
+
+    <Button
+        android:id="@+id/button_key_num_7"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="7\nHome"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_8"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="8\n↑"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_9"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="9\nPageUp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_add"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="+"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_column="3"
+        app:layout_columnWeight="1"
+        app:layout_row="0"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_home"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_numlock"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="Num\nLock"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_print_screen"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="Print\nScreen"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_4"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="4\n←"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_5"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="5\n"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_6"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="6\n→"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_substract"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="-"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_end"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="End"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_prev_track"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_prev_track"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_next_track"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_next_track"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_1"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="1\nEnd"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_2"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="2\n↓"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_3"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="3\nPageDn"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_divide"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="/"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_pause"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="Pause"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_play_pause"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_play_pause"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_media"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_media"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_0"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="0\nIns"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_num_decimal"
+        style="@style/TouchPadKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text=".\nDel"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_mutipy"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:minWidth="0dp"
+        android:text="*"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_vol_mute"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_mute"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_vol_down"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_vol_down"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <Button
+        android:id="@+id/button_key_vol_up"
+        style="@style/TouchPadKeyDark"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:foreground="@drawable/ic_key_vol_up"
+        android:foregroundGravity="center"
+        android:minWidth="0dp"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+</androidx.gridlayout.widget.GridLayout>

@@ -1,0 +1,3 @@
+include ':mengui'
+include ':app'
+rootProject.name = "MobileMouse"

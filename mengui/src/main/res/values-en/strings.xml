@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="text_placeholder">Placeholder</string>
+    <string name="text_tip">Tip</string>
+    <string name="text_more">More</string>
+    <string name="text_title">Title text</string>
+    <string name="text_please_wait">Hold on</string>
+    <string name="text_device_type">Device type</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="true">
+
+    <PreferenceCategory
+        app:title="@string/settings_header_common">
+
+        <SeekBarPreference
+            android:max="200"
+            app:min="0"
+            app:defaultValue="100"
+            app:key="touch_sensitivity"
+            app:title="@string/settings_title_touch_sensitivity" />
+        <SeekBarPreference
+            android:max="200"
+            app:min="0"
+            app:defaultValue="100"
+            app:key="scroll_sensitivity"
+            app:title="@string/settings_title_scroll_sensitivity" />
+        <SeekBarPreference
+            android:max="200"
+            app:min="0"
+            app:defaultValue="100"
+            app:key="move_sensitivity"
+            app:title="@string/settings_title_move_sensitivity" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="keep_screen_on"
+            app:title="@string/settings_title_keep_screen_on" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="show_scroll_bar"
+            app:title="@string/settings_title_show_scroll_bar" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="vibrate_touch"
+            app:title="@string/settings_title_vibrate_touch" />
+
+        <ListPreference
+            app:defaultValue="1"
+            app:persistent="false"
+            app:key="volume_key_use_to"
+            app:title="@string/settings_title_volume_key_use_to"
+            app:entries="@array/volume_key_use_to_entries"
+            app:entryValues="@array/volume_key_use_to_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_header_others">
+
+        <Preference
+            app:key="reset_all"
+            app:title="@string/settings_title_reset_all" />
+        <Preference
+            app:key="app_choose_language"
+            app:title="@string/settings_title_choose_language" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_header_about">
+
+        <Preference
+            app:icon="@drawable/ic_menu_about"
+            app:key="app_about"
+            app:title="@string/settings_key_about" />
+
+        <Preference
+            app:icon="@drawable/ic_menu_receipt_long"
+            app:key="app_privacy_policy"
+            app:title="@string/settings_key_privacy_policy" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

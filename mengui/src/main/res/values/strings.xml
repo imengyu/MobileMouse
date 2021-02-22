@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_yes">是</string>
+    <string name="action_no">否</string>
+    <string name="text_placeholder">文字占位符</string>
+    <string name="text_tip">提示</string>
+    <string name="text_more">更多</string>
+    <string name="text_title">标题文字</string>
+    <string name="text_please_wait">请稍后</string>
+    <string name="text_device_type">设备类型</string>
+</resources>

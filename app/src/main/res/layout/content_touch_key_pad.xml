@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_esc"
+            style="@style/TouchPadKey"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Esc"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem3"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="~\n`"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem4"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="{\n["
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem6"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="}\n]"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem5"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="|\n\"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem7"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="&quot;\n'"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem1"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text=":\n;"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem2"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="\?\n/"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem_comma"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="&lt;\n,"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem_period"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="&gt;\n."
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_del"
+            style="@style/TouchPadKey"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Del"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_1"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_1"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_2"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_2"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_3"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_3"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_4"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_4"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_5"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_5"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_6"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_6"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_7"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_7"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_8"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_8"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_9"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="(\n9"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_0"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_0"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem_minus"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_oem_minus"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_oem_plus"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_key_oem_plus"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_tab"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Tab"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_q"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Q"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_w"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="W"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_e"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="E"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_r"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="R"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_t"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="T"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_y"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Y"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_u"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="U"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_i"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="I"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_o"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="O"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_p"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="P"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_caps"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Caps"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_a"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="A"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_s"
+            style="@style/ButtonCommon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="S"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_d"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="D"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_f"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="F"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_g"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="G"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_h"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="H"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_j"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="J"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_k"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="K"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_l"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="L"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_left_shift"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Shift"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_z"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Z"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_x"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="X"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_c"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="C"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_v"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="V"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_b"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="B"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_n"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="N"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_m"
+            style="@style/TouchPadKey"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="M"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_key_right_shift"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Shift"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_fn"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:minWidth="0dp"
+            android:text="Fn"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_media_key_and_num_key"
+            style="@style/TouchPadKey"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="@string/text_keypad_media_key_and_num_key"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_win"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_win_logo"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_right_alt"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:minWidth="0dp"
+            android:text="Alt"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_right_ctrl"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:minWidth="0dp"
+            android:text="Ctrl"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_up"
+            style="@style/TouchPadKey"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_up"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_menu"
+            style="@style/TouchPadKey"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_menu"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_backspace"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_backspace"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_key_left_ctrl"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:minWidth="0dp"
+            android:text="Ctrl"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_left_alt"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:minWidth="0dp"
+            android:text="Alt"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_space"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:minWidth="0dp"
+            android:text="Space"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_left"
+            style="@style/TouchPadKey"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_left"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_down"
+            style="@style/TouchPadKey"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_down"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_right"
+            style="@style/TouchPadKey"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_right"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_key_enter"
+            style="@style/TouchPadKeyDark"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="0"
+            android:foreground="@drawable/ic_key_enter"
+            android:foregroundGravity="center"
+            android:minWidth="0dp"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

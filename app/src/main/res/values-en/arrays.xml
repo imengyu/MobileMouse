@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="volume_key_use_to_entries">
+        <item>Adjust phone volume</item>
+        <item>Adjust computer volume</item>
+        <item>As left and right buttons</item>
+    </string-array>
+</resources>

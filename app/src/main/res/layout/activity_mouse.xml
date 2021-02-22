@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MouseActivity">
+
+    <com.imengyu.mengui.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:right_icon="@drawable/ic_title_settings"
+        app:title="@string/app_name"
+        app:title_bar_type="TwoButton">
+
+    </com.imengyu.mengui.widget.TitleBar>
+
+    <TextView
+        android:id="@+id/text_connect_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/text_placeholder"
+        app:drawableStartCompat="@drawable/ic_bad"
+        app:layout_constraintBottom_toTopOf="@+id/layout_tool_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.imengyu.mobilemouse.mouse.MouseView
+        android:id="@+id/mouse_pad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_tool_bar"
+        app:layout_constraintEnd_toStartOf="@+id/scroll_pad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_button_pad" />
+
+    <ImageButton
+        android:id="@+id/button_lock_sensor"
+        style="@style/ButtonRound"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/text_touchpad_sensor_lock"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_lock"
+        android:tint="@android:color/secondary_text_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_button_pad" />
+
+    <ImageView
+        android:id="@+id/scroll_pad"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/text_scroll"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_connect_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_lock_sensor"
+        app:srcCompat="@drawable/btn_round_n" />
+
+    <LinearLayout
+        android:id="@+id/layout_pad_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:longClickable="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/mouse_pad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mouse_pad"
+        app:layout_constraintTop_toTopOf="@+id/mouse_pad">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/image_touch_pad_mode"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/text_touchpad_mode"
+                app:srcCompat="@drawable/ic_touchpad_sensor"
+                app:tint="@color/colorTextNight" />
+
+            <ImageView
+                android:id="@+id/image_touch_pad_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/text_touchpad_sensor_locked"
+                app:srcCompat="@drawable/ic_lock"
+                app:tint="@color/colorAccent" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_touch_pad_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/text_placeholder"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button_pad"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlebar">
+
+        <Button
+            android:id="@+id/button_left"
+            style="@style/ButtonRound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/text_left_button" />
+
+        <ImageButton
+            android:id="@+id/button_middle"
+            style="@style/ButtonRound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="@string/text_middle_button"
+            android:minWidth="30dp"
+            android:src="@drawable/ic_updown" />
+
+        <Button
+            android:id="@+id/button_right"
+            style="@style/ButtonRound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/text_right_button" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/image_key_controls_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPanoBarBackground"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/layout_tool_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_key_controls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/layout_tool_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keypad_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <include
+                android:id="@+id/layout_keyboard"
+                layout="@layout/content_touch_key_pad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/layout_keyboard_num"
+                layout="@layout/content_touch_key_pad_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="-8dp"
+            android:contentDescription="@string/text_placeholder"
+            app:srcCompat="@drawable/triangle_down" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_touch_hand"
+            style="@style/ButtonTransParent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/text_touchpad_mode_touch"
+            android:minWidth="0dp"
+            app:srcCompat="@drawable/ic_button_touch_hand"
+            app:tint="@color/colorTouchPadControlColor" />
+
+        <ImageButton
+            android:id="@+id/button_touch_sensor"
+            style="@style/ButtonTransParent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/button_touch_hand"
+            android:contentDescription="@string/text_touchpad_mode_sensor"
+            android:minWidth="0dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_button_touch_sensor"
+            app:tint="@color/colorTouchPadControlColor" />
+
+        <ImageButton
+            android:id="@+id/button_touch_power"
+            style="@style/ButtonTransParent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/button_touch_keyboard"
+            android:contentDescription="@string/text_touchpad_pc_power"
+            android:minWidth="0dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_button_touch_power"
+            app:tint="@color/colorTouchPadControlColor" />
+
+        <ImageButton
+            android:id="@+id/button_touch_keyboard"
+            style="@style/ButtonTransParent"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/text_touchpad_keyboard"
+            android:minWidth="0dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_button_touch_keyboard"
+            app:tint="@color/colorTouchPadControlColor" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

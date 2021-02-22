@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAAD14</color>
+    <color name="colorPrimaryDark">#F39A00</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <color name="colorPrimaryNight">#FFCA61</color>
+    <color name="colorPrimaryDarkNight">#FFB636</color>
+    <color name="colorAccentNight">#FF7A50</color>
+
+    <color name="colorTouchPad">#F1F1F1</color>
+    <color name="colorTouchPadNight">#535353</color>
+    <color name="colorTouchPadControlColor">#C3C3C3</color>
+    <color name="colorTouchPadControlActiveColor">#E89300</color>
+
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name" translatable="false">MobileMouse</string>
+    <string name="app_introduction">一款简洁的手机无线鼠标</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_add_computer">添加电脑</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_help">帮助</string>
+    <string name="action_delete">删除</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_cancel_delete">取消删除</string>
+    <string name="action_reconnect">重新连接</string>
+    <string name="action_scan_devices">扫描设备</string>
+    <string name="action_back">返回</string>
+
+    <string name="text_copyright" translatable="false">Copyright © 2021 imengyu</string>
+    <string name="text_version">版本：%s</string>
+
+    <string name="text_scan_device">正在扫描设备&#8230;</string>
+    <string name="text_online">在线</string>
+    <string name="text_offline">离线</string>
+
+    <string name="text_device_removed">已经删除设备%1$s</string>
+    <string name="text_list_connected_time">%1$s连接过</string>
+    <string name="text_never_connect">从未连接过</string>
+
+    <string name="text_connect_success">连接成功</string>
+    <string name="text_connect_failed">连接失败</string>
+    <string name="text_connecting">正在连接&#8230;</string>
+    <string name="text_connection_lost">连接丢失</string>
+
+    <string name="text_wifi_not_connect">没有连接到 wifi</string>
+    <string name="text_wifi_not_connect_explanatory_text">您没有连接到 wifi，只有与对应电脑连接到同一个路由器的WIFI下才能连接哦</string>
+
+    <string name="text_all_settings_reset_to_default">所有设置已恢复为默认</string>
+    <string name="text_do_you_want_reset_settings">你想将所有设置恢复为默认吗？</string>
+
+    <string name="text_left_button">左键</string>
+    <string name="text_right_button">右键</string>
+    <string name="text_middle_button">中键</string>
+    <string name="text_scroll">滚动条</string>
+    <string name="text_password">密码</string>
+    <string name="text_enter_password">请输入连接密码</string>
+    <string name="text_enter_ip_address">输入IP地址</string>
+    <string name="text_please_type_a_invalid_ip">您输入IP的地址格式不正确，请重新输入</string>
+    <string name="text_please_type_a_name">请输入一个名称</string>
+
+    <string name="text_error_connect">连接失败</string>
+    <string name="text_error_unknown_err">未知错误</string>
+    <string name="text_error_pass_err">密码错误</string>
+    <string name="text_error_server_err">服务器错误</string>
+    <string name="text_error_connect_time_out">连接超时，请检查电脑端服务是否开启</string>
+
+    <string name="text_fmt_date_mysterious_time">神秘时间</string>
+    <string name="text_fmt_date_years_ago">年前</string>
+    <string name="text_fmt_date_month_ago">月前</string>
+    <string name="text_fmt_date_weeks_ago">周前</string>
+    <string name="text_fmt_date_days_ago">天前</string>
+    <string name="text_fmt_date_hours_ago">小时前</string>
+    <string name="text_fmt_date_minutes_ago">分钟前</string>
+    <string name="text_fmt_date_just_now">刚刚</string>
+
+    <string name="text_touchpad_mode">触控板模式</string>
+    <string name="text_touchpad_mode_sensor">通过旋转手机控制鼠标\n水平旋转平移鼠标，上下旋转上下移动鼠标\n按住锁定键可以不移动鼠标旋转手机</string>
+    <string name="text_touchpad_mode_touch">使用手指触摸控这里来控制鼠标\n一个手指移动鼠标，两个手指滚动页面\n一个手指点击是左键，两个手指点击是右键</string>
+    <string name="text_touchpad_sensor_lock">按下这个键锁定手机旋转陀螺仪</string>
+    <string name="text_touchpad_sensor_locked">手机旋转陀螺仪已锁定</string>
+    <string name="text_touchpad_pc_power">电脑电源控制</string>
+    <string name="text_touchpad_keyboard">键盘</string>
+
+    <string name="text_touchpad_pc_power_shutdown">关机</string>
+    <string name="text_touchpad_pc_power_sleep">睡眠</string>
+    <string name="text_touchpad_pc_power_reboot">重启</string>
+    <string name="text_touchpad_pc_power_logoff">注销</string>
+
+    <string name="text_edit_device_name">设备名称</string>
+    <string name="text_edit_device_address">IP地址</string>
+    <string name="text_edit_device_pass">连接密码</string>
+
+    <string name="text_keypad_media_key_and_num_key">小键盘</string>
+    <string name="text_key_oem_plus" translatable="false">+\n=</string>
+    <string name="text_key_oem_minus" translatable="false">-\n-</string>
+    <string name="text_key_1" translatable="false">!\n1</string>
+    <string name="text_key_2" translatable="false">\@\n2</string>
+    <string name="text_key_3" translatable="false">#\n3</string>
+    <string name="text_key_4" translatable="false">$\n4</string>
+    <string name="text_key_5" translatable="false">%\n5</string>
+    <string name="text_key_6" translatable="false">^\n6</string>
+    <string name="text_key_7" translatable="false">&amp;\n7</string>
+    <string name="text_key_8" translatable="false">*\n8</string>
+    <string name="text_key_9" translatable="false">(\n9</string>
+    <string name="text_key_0" translatable="false">)\n0</string>
+
+    <string name="text_common_do_you_really_want_to">你真的要%s吗？</string>
+
+    <string name="text_flow_system">跟随系统</string>
+    <string name="text_save">保存</string>
+    <string name="text_and">与</string>
+    <string name="text_agreement_notice">为了便于我们更好的为你提供服务，在使用本产品前，请务必仔细阅读本产品相关的《用户协议》与《隐私政策》，点击同意即表明您接受并遵守本协议约定。</string>
+    <string name="text_agreement">《用户协议》</string>
+    <string name="text_privacy_policy">《隐私政策》</string>
+    <string name="text_agreement_base_welcome">欢迎使用 MobileMouse ！您可以使用本应用当作鼠标控制您的PC鼠标。另外为了更好地使用产品功能，需征求您的允许，获得以下权限：</string>
+    <string name="text_agreement_base">为了更好地使用产品功能，应用还征求您的允许获得以下权限：</string>
+    <string name="text_agreement_interenet">网络</string>
+    <string name="text_agreement_interenet_sub">包括网络访问权限，IP地址等，有网络访问权限后才能为您连接和控制局域网中的PC设备；另外，我们需要联网下载程序更新数据；以及帮助我们统计产品使用情况、反馈产品BUG，帮助我们不断改进产品功能和体验。</string>
+    >
+    <string name="text_agreement_devinfo">设备信息</string>
+    <string name="text_agreement_devinfo_sub">包括设备ID/屏幕尺寸/操作系统/设备型号/网络连接模式/移动国家代码/屏幕分辨率及系统语言；用于根据不同的设备及系统版本来提供不同的功能和体验，获取产品的使用情况及Bug信息，帮助我们不断改进产品功能和体验。</string>
+    <string name="text_agreement_allow">同意并继续</string>
+    <string name="text_agreement_not_allow">不同意并退出</string>
+    <string name="text_i_agree_agreement">我同意</string>
+    <string name="text_i_new">我知道了</string>
+
+    <string name="text_help_us_translate" translatable="false">If your language translation is not accurate, can you help us translate?</string>
+
+    <string name="title_reminder">温馨提示</string>
+    <string name="title_choose_language">选择语言</string>
+    <string name="title_help">使用帮助</string>
+
+    <string name="settings_title_reset_all">重置所有设置</string>
+    <string name="settings_title_choose_language">选择语言</string>
+    <string name="settings_title_touch_sensitivity">触摸灵敏度</string>
+    <string name="settings_title_scroll_sensitivity">滚动灵敏度</string>
+    <string name="settings_title_move_sensitivity">移动灵敏度</string>
+    <string name="settings_title_keep_screen_on">保持屏幕常亮</string>
+    <string name="settings_title_show_scroll_bar">显示滚动条</string>
+    <string name="settings_title_vibrate_touch">触摸按键时震动</string>
+    <string name="settings_title_volume_key_use_to">音量键用来</string>
+
+    <string name="settings_key_about">关于</string>
+    <string name="settings_key_privacy_policy">隐私政策和许可协议</string>
+
+    <string name="settings_header_about">关于</string>
+    <string name="settings_header_common">通用</string>
+    <string name="settings_header_others">其他</string>
+
+    <string name="text_help">
+        如何使用 MobileMouse ？\n
+        \n
+        1. 请先在您的 PC 上安装 MobileMouse Server 服务端软件，并开启运行。\n
+        2. 将手机连接至与电脑同一个路由器下的 WIFI。\n
+        3. 在主界面点击“扫描设备”然后点击扫描出来的设备或是点击“+”号手动输入要连接设备的IP地址，然后点击连接。\n
+        4. 在进入界面后等待连接完成，下方会显示已经连接，之后您就可以使用手机控制电脑了。\n
+        5. 点击键盘按钮可以打开软件键盘。\n
+    </string>
+
+</resources>

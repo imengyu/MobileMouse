@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="volume_key_use_to_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="volume_key_use_to_entries">
+        <item>调整手机音量</item>
+        <item>调整电脑音量</item>
+        <item>当作左键和右键</item>
+    </string-array>
+
+    <string-array name="language_entries">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>zh</item>
+        <item>en</item>
+    </string-array>
+</resources>

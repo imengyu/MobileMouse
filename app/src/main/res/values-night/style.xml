@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccentNight</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="colorControlNormal">@android:color/primary_text_light</item>
+        <item name="colorControlActivated">@color/colorPrimaryNight</item>
+
+        <item name="android:colorControlNormal">@android:color/primary_text_light</item>
+        <item name="android:colorControlActivated">@color/colorPrimaryNight</item>
+
+        <item name="android:textColor">@color/colorTextNight</item>
+        <item name="android:textColorHighlight">@color/colorPrimaryNight</item>
+    </style>
+
+    <style name="TouchPad">
+        <item name="android:textColor">@color/colorTouchPadNight</item>
+    </style>
+</resources>
